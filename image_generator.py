@@ -12,11 +12,11 @@ schedule = 0
 class Schedule():
     def __init__(self):
         path = Path(__file__).parent
-        self.img = Image.open(f'{path}\media\schedule_clear.jpg')
+        self.img = Image.open(f'{path}/media/schedule_clear.jpg')
 
         self.i1 = ImageDraw.Draw(self.img)
 
-        self.font = ImageFont.truetype(f'{path}\media\FFGoodProXCond-Regular.ttf',25)
+        self.font = ImageFont.truetype(f'{path}/media/FFGoodProXCond-Regular.ttf',25)
         y = 100
         coordinates_monday = [7,y]
         coordinates_tuesday = [225,y]
