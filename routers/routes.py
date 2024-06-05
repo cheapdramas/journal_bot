@@ -185,7 +185,7 @@ async def schedule_route(message:Message):
         for i in range(0,5):
             schedule_draw.draw_subject(i,schedule[i][1:])
         schedule_draw.save_pic()
-        await message.reply_photo(photo = types.FSInputFile(path = f'{Path(__file__).parent.parent}\siga.png'))
+        await message.reply_photo(photo = types.FSInputFile(path = f'{Path(__file__).parent.parent}/siga.png'))
 
 
 
